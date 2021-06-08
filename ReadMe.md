@@ -3,7 +3,15 @@
 ## PowerShell Scripts
 
 
+#### Prerequisite to manage AD through PowerShell
+```PowerShell
 
+Install-WindowsFeature RSAT-AD-PowerShell
+Import-Module ActiveDirectory
+```
+
+
+#### Get-ADUser - Reteives AD User account details.
 
 ```PowerShell
 
