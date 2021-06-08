@@ -1,8 +1,11 @@
 #PowerShell Scripts
 
+
+
+
+
 ```PowerShell
 
-Clear
 Get-ADUser -Filter * -Properties * |
             select Name,
             @{E= 'SamAccountName' ; N= 'User ID' },
