@@ -3,15 +3,14 @@
 ## PowerShell Scripts
 
 
-#### Install PowerShell Module for ActiveDirectory
+### Active Directory
+
+- Install PowerShell Module for ActiveDirectory
 ```PowerShell
 
 Install-WindowsFeature RSAT-AD-PowerShell
 Import-Module ActiveDirectory
 ```
-
-
-#### Active Directory
 
 - Get-ADUser - Reteives AD User account details.
 
