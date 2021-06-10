@@ -13,6 +13,7 @@ Import-Module ActiveDirectory
 ```
 
 <br/>
+
 - Retrieve user and computer information from Active Directory
 
 ```PowerShell
@@ -34,6 +35,8 @@ Get-ADComputer -Filter * -Properties * |
 
 ```
 
+
+<br/>
 
  - Export output in CSV
 
