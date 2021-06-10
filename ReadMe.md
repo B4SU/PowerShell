@@ -13,7 +13,7 @@ Import-Module ActiveDirectory
 ```
 
 <br/>
-- Get-ADUser - Reteives AD User account details.
+- Retrieve user and computer information from Active Directory
 
 ```PowerShell
 
@@ -26,7 +26,9 @@ $ADUsers = Get-ADUser -Filter * -Properties * |
             @{E = 'PasswordLastSet'; N = 'Password Last Set'}
 
 $ADUsers | Format-Table
-
+```
+<br/>
+```PowerShell
 # Use Get-ADComputer to retreive Domain Computer information
 Get-ADComputer -Filter * -Properties * |
     select SamAccountName,Name,DNSHostName,IPv4Address,Enabled,OperatingSystem,PrimaryGroup,MemberOf,LastLogonDate,LastBadPasswordAttempt | Format-Table
