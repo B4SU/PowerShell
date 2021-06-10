@@ -12,7 +12,7 @@ Install-WindowsFeature RSAT-AD-PowerShell
 Import-Module ActiveDirectory
 ```
 
-
+<br/>
 - Get-ADUser - Reteives AD User account details.
 
 ```PowerShell
@@ -27,7 +27,7 @@ $ADUsers = Get-ADUser -Filter * -Properties * |
 
 $ADUsers | Format-Table
 
-
+# Use Get-ADComputer to retreive Domain Computer information
 Get-ADComputer -Filter * -Properties * |
     select SamAccountName,Name,DNSHostName,IPv4Address,Enabled,OperatingSystem,PrimaryGroup,MemberOf,LastLogonDate,LastBadPasswordAttempt | Format-Table
 
