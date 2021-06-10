@@ -27,7 +27,9 @@ $ADUsers = Get-ADUser -Filter * -Properties * |
 
 $ADUsers | Format-Table
 ```
+
 <br/>
+
 ```PowerShell
 # Use Get-ADComputer to retreive Domain Computer information
 Get-ADComputer -Filter * -Properties * |
