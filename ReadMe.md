@@ -29,7 +29,7 @@ $ADUsers | Format-Table
 ```
 
 
- - Export CSV output, change last line
+ - Export output in CSV
 
 ```PowerShell
 $ADUsers | Export-Csv -Path $env:USERPROFILE\Documents\$env:COMPUTERNAME.csv -NoTypeInformation
