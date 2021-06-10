@@ -12,6 +12,7 @@ Install-WindowsFeature RSAT-AD-PowerShell
 Import-Module ActiveDirectory
 ```
 
+
 - Get-ADUser - Reteives AD User account details.
 
 ```PowerShell
@@ -28,7 +29,7 @@ $ADUsers | Format-Table
 
 ```
 
-
+>
  - Export CSV output, change last line
 
 ```PowerShell
